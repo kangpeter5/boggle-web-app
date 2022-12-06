@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useCallback, useState } from 'react';
+import { Board, Word } from './components';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [word, setWord] = useState('');
+	const [error, setError] = useState(false);
+
+	const handleError = (err: boolean) => {
+		setError(err);
+	};
+
+	const handleWordUpdate = useCallback(
+		(letter: string) => {
+			const newWord = word + letter;
+			setWord(newWord);
+		},
+		[word]
+	);
+
+	return (
+		<div className="App">
+			<Word text={word} isError={error} />
+
+			<Board />
+		</div>
+	);
 }
 
 export default App;
