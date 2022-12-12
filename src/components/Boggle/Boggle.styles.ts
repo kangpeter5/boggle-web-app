@@ -8,6 +8,7 @@ export const StyledBoggle = styled.div<DiceProps>`
 	border: 2px solid grey;
 	background: ${({ isSelected }: DiceProps) => (!isSelected ? '#ffffff' : '#aef4c5')};
 	flex: 1 1 auto;
+	text-align: center;
 
 	span {
 		text-transform: uppercase;

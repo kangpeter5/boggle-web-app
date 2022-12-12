@@ -1,7 +1,7 @@
 import { WordProps } from '../../utils/types';
 import { WordText } from './Word.styles';
 
-const Word = ({ text, isError }: WordProps) => {
+const Word = ({ text, isError = false }: WordProps) => {
 	return <WordText isError={isError}>{text}</WordText>;
 };
 

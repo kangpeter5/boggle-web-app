@@ -1,4 +1,3 @@
-import React from 'react';
 import { ContainerDiv } from './Container.styles';
 import { ContainerProps } from '../../utils/types';
 

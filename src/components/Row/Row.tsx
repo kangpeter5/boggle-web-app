@@ -1,4 +1,3 @@
-import React from 'react';
 import { StyledRow } from './Row.styles';
 import { RowProps } from '../../utils/types';
 

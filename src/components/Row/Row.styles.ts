@@ -8,4 +8,5 @@ export const StyledRow = styled.div`
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 15px;
+	max-width: 768px;
 `;

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { BoardProps } from '../../utils/types';
 
-export const StyledBoard = styled.div<BoardProps>`
+export const StyledBoard = styled.div`
 	width: 360px;
 	height: 360px;
 	margin: auto;
