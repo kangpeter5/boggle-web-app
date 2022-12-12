@@ -1,3 +1,11 @@
+# Purpose of this App
+
+This app was created in order to further my knowledge of TypeScript
+
+# Dictionary API
+
+If https://api.dictionaryapi.dev is down, use utils/wordList.ts
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
